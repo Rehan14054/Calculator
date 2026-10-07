@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+body {
+  height: 100vh;
+  background-color: rgb(176, 195, 212);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  height: 70vh;
+  width: clamp(300px, 25%, 350px);
+  background-color: rgb(13, 43, 96);
+  border-radius: 2%;
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.container input {
+  position: absolute;
+  height: 15%;
+  width: 100%;
+  margin-top: 5px;
+  box-sizing: border-box;
+  font-size: 2rem;
+  background-color: rgb(2, 24, 61);
+  color: white;
+  border-radius: 4px;
+  border: none;
+  text-align: right;
+  /* font-style: oblique; */
+}
+
+
+.container input:focus {
+  outline: none;
+}
+
+.buttons {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.buttons .row {
+  display: flex;
+  gap: 1.5rem;
+}
+button:active {
+  transform: translateY(3px);
+}
+
+.my-btn {
+  font-size: 1rem;
+  background-color: rgb(250, 249, 249);
+  color: rgb(12, 33, 70);
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0px 3px 0px rgb(163, 160, 160);
+  padding: 5px 10px;
+  padding: 10px;
+  width: 50px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.big-btn {
+  width: 123px;
+  height: 30px;
+  color: white;
+}
+.big-btn-blue {
+  background-color: rgb(74, 74, 196);
+  box-shadow: 0px 3px 0px rgb(120, 120, 185);
+}
+.big-btn-red {
+  background-color: rgb(207, 57, 57);
+  box-shadow: 0px 3px 0px rgb(194, 90, 90);
+}
